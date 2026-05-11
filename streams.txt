@@ -2,6 +2,6 @@
 # Lines starting with # are ignored.
 # Example format: https://www.youtube.com/watch?v=XXXXXXXXXXX
 
-https://www.youtube.com/watch?v=B-Z0lEvi6Q4
-https://www.youtube.com/watch?v=VhXZ4RhZsKk
-https://www.youtube.com/watch?v=HQHeZ5Wgusg
+https://www.youtube.com/watch?v=jfKfPfyJRdk
+https://www.youtube.com/watch?v=5qap5aO4i9A
+https://www.youtube.com/watch?v=DWcJFNfaw9c
