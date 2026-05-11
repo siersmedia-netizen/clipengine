@@ -1,0 +1,4 @@
+yt-dlp
+instagrapi
+moviepy
+requests
