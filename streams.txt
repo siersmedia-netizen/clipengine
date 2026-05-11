@@ -1,3 +1,7 @@
-# https://www.youtube.com/watch?v=B-Z0lEvi6Q4
-# https://www.youtube.com/watch?v=VhXZ4RhZsKk
-# https://www.youtube.com/watch?v=HQHeZ5Wgusg
+# Add your YouTube stream URLs below, one per line.
+# Lines starting with # are ignored.
+# Example format: https://www.youtube.com/watch?v=XXXXXXXXXXX
+
+https://www.youtube.com/watch?v=B-Z0lEvi6Q4
+https://www.youtube.com/watch?v=VhXZ4RhZsKk
+https://www.youtube.com/watch?v=HQHeZ5Wgusg
