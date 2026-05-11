@@ -15,13 +15,13 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # ============================================================
-#  EASY SETUP — CHANGE THESE
+#  EASY SETUP — CHANGE THESE (or set via environment variables)
 # ============================================================
-INSTAGRAM_USERNAME = "wspsiers"       # Your Instagram username
-INSTAGRAM_PASSWORD = "YOUR_PASSWORD_HERE"  # Your Instagram password
-CLIPS_PER_DAY = 20                    # How many to post per day
-DELAY_BETWEEN_POSTS = 900             # Seconds between posts (15 min default)
-STREAMER_NAME = "Neon"               # Streamer name for captions
+INSTAGRAM_USERNAME = os.getenv("IG_USERNAME", "wspsiers")        # Your Instagram username
+INSTAGRAM_PASSWORD = os.getenv("IG_PASSWORD", "YOUR_PASSWORD_HERE")  # Your Instagram password
+CLIPS_PER_DAY = int(os.getenv("CLIPS_PER_DAY", "20"))           # How many to post per day
+DELAY_BETWEEN_POSTS = int(os.getenv("DELAY_MINUTES", "15")) * 60  # Seconds between posts (15 min default)
+STREAMER_NAME = os.getenv("STREAMER_NAME", "Neon")               # Streamer name for captions
 # ============================================================
 
 STREAMS_FILE = "streams.txt"          # Add YouTube links here, one per line
@@ -294,7 +294,8 @@ def main():
 
     if INSTAGRAM_PASSWORD == "YOUR_PASSWORD_HERE":
         print("❌ You haven't set your Instagram password yet!")
-        print(f"   Open this file and change INSTAGRAM_PASSWORD on line 20")
+        print("   Set the IG_PASSWORD environment variable in Railway, or")
+        print("   open this file and change the default value for INSTAGRAM_PASSWORD")
         sys.exit(1)
 
     streams = load_streams()
